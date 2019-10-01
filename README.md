@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React allows you to build large scale applications efficiently by keeping your code DRY. It does this through its use of components. A component is a reusable piece of code that combines html, css, and js. It also take a lot of work off the DOM by using a virtual DOM, which updates the actual DOM when components change states, rather than having to reload the entire page.
+
 - [ ] What does it mean to _think_ in react?
+
+It means when your building your app, you’re thinking about how it breaks down into different components and subcomponents, and which ones will be handling state changes.
 
 - [ ] Describe state.
 
+The state object holds property values and rerenders the component when the state changes.
+
 - [ ] Describe props.
 
+Props are the parameters passed into components. This helps keep your code DRY rather than typing out the same code for different elements.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+Side effects are anything that affects something outside the scope of the function being executed. The useEffect hook handles side effects by taking in a callback function, and a dependency array which ties it to the state/prop changes.
 
 ## Project Set Up
 
